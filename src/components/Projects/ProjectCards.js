@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsYoutube } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
@@ -10,6 +10,20 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
+        
+        {props.logos && props.logos.length > 0 && (
+          <div className="project-logos">
+            {props.logos.map((logo, index) => (
+              <img
+                key={index} 
+                src={logo} 
+                alt={`logo-${index}`} 
+                style={{ maxHeight: '40px', width: 'auto' }} 
+              />
+            ))}
+          </div>
+        )}
+
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>

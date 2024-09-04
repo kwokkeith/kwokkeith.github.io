@@ -16,6 +16,7 @@ import javaLogo from "../../Assets/Logos/java_logo.png";
 import javascriptLogo from "../../Assets/Logos/javascript_logo.png";
 import goLogo from "../../Assets/Logos/go_logo.png";
 import cppLogo from "../../Assets/Logos/cpp_logo.svg";
+import rosLogo from "../../Assets/Logos/ros_logo.png";
 
 
 function Home2() {
@@ -46,24 +47,27 @@ function Home2() {
               <br />
               <br />I am proficient in:
               <br />
-              <Row className="justify-content-center">
-                <Col> 
-                  <img src={csharpLogo} className="home-proficiency-logo-image"/>                  
+              <Row className="home-proficiency-logo-row justify-content-center">
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={csharpLogo} className="home-proficiency-logo-image" />
                 </Col>
-                <Col>
-                  <img src={pythonLogo} className="home-proficiency-logo-image"/>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={pythonLogo} className="home-proficiency-logo-image" />
                 </Col>
-                <Col>
-                  <img src={javaLogo} className="home-proficiency-logo-image"/>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={javaLogo} className="home-proficiency-logo-image" />
                 </Col>
-                <Col>
-                  <img src={javascriptLogo} className="home-proficiency-logo-image"/>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={javascriptLogo} className="home-proficiency-logo-image" />
                 </Col>
-                <Col>
-                  <img src={goLogo} className="home-proficiency-logo-image"/>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={goLogo} className="home-proficiency-logo-image" />
                 </Col>
-                <Col>
-                  <img src={cppLogo} className="home-proficiency-logo-image"/>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={cppLogo} className="home-proficiency-logo-image" />
+                </Col>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={rosLogo} className="home-proficiency-logo-image" />
                 </Col>
               </Row>
               <i>

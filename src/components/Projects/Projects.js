@@ -9,19 +9,86 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
+// For project images
+import sapLogo from "../../Assets/Projects/SAP_logo.png"
+import csLogo from "../../Assets/Logos/csharp_logo.png"
+import dotNetLogo from "../../Assets/Logos/dotNet_logo.png"
+import othelloBeepImg from "../../Assets/Projects/Othello-beep.jpeg"
+import alchitryLogo from "../../Assets/Logos/alchitry_logo.png"
+import verilogLogo from "../../Assets/Logos/verilog-logo.png"
+import enigmaMachineImg from "../../Assets/Projects/EnigmaMachine.jpeg"
+import rustLogo from "../../Assets/Logos/rust_logo.png"
+import javaLogo from "../../Assets/Logos/java_logo.png"
+
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          <strong className="purple">Highlights </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          :Here are a few projects I especially enjoyed working on:
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sapLogo}
+              isBlog={false}
+              title="ConcurSolutionz"
+              description=
+              "Automation for student claims that interfaces with the SAP Concur system and uses Optical Character Recognition. This project allowed me to apply software engineering skills and project management skills such as scrum project planning, UML designs, sequence diagrams, design-patterns, unit test cases, control flow graphs and Object-Oriented Programming."
+              ghLink="https://github.com/kwokkeith/ConcurSolutionz"
+              demoLink="https://www.youtube.com/watch?v=O2sew6b3bDg"
+              logos={[
+                csLogo,
+                dotNetLogo,
+              ]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={othelloBeepImg}
+              isBlog={false}
+              title="OthelloBeep"
+              description=
+              "My team developed a unique Instruction Set Architecture (ISA) based on the Beta CPU from MIT to programme the game of Othello on a Field Programmable Gate Array (FPGA).
+              This project was challenging but extremely rewarding with application in computer structures, hardware description language and machine language coding.
+              A simulation was also developed for ease of testing our brand new ISA!"
+              ghLink="https://github.com/kwokkeith/50002-OthelloBeep"
+              demoLink="https://youtu.be/B0zMODB_oGo"
+              logos={[
+                alchitryLogo,
+                verilogLogo,
+              ]} 
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={enigmaMachineImg}
+              isBlog={false}
+              title="u8EnigmaMachine"
+              description=
+              "Together with my friend, this cybersecurity project was done for a Capture the Flag challenge. It contains two challenges which requires one to decipher a UTF-8 enigma generated code.
+              This project requires an understanding on the mechanism of the Enigma machine to perform the encryption and decryption. The solution cracker was developed in Rust."
+              ghLink="https://github.com/kwokkeith/u8EnigmaMachine"
+              demoLink="https://www.youtube.com/watch?v=hAaXjnVS9QQ"
+              logos={[
+                rustLogo,
+                javaLogo,
+              ]}
+            />
+          </Col>
+        </Row>
+        <h1 className="project-heading">
+          All <strong className="purple">projects</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          :Here are some of my past projects:
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
@@ -86,10 +153,11 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> 
         </Row>
       </Container>
     </Container>
+
   );
 }
 

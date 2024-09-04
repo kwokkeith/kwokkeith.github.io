@@ -448,8 +448,21 @@ button:focus {
 }
 
 .home-proficiency-logo-image {
-  max-height: 100px;
-  width: auto;
+  max-height: 60px;
+  height: auto;
+}
+
+.home-proficiency-logo-row {
+  background-color: rgba(130, 130, 130, 0.2); /* Gray with 50% transparency */
+  padding: 10px;
+  border-radius: 40px; 
+  margin-bottom: 15px; /* Space between rows */
+}
+
+.home-proficiency-logo-col {
+  flex-basis: 100%; /* Full width by default */
+  display: flex;
+  justify-content: center;
 }
 
 /* For different screen width */
@@ -461,6 +474,22 @@ button:focus {
 @media (max-width: 576px) {
   .home-proficiency-logo-image {
     max-height: 60px;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-proficiency-logo-col {
+    flex-basis: 50%; /* Half width */
+  }
+}
+@media (min-width: 768px) {
+  .home-proficiency-logo-col {
+    flex-basis: 33.33%;
+  }
+}
+@media (min-width: 992px) {
+  .home-proficiency-logo-col {
+    flex-basis: 25%; 
   }
 }
 
@@ -547,6 +576,19 @@ button:focus {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.project-logos {
+  display: flex;
+  gap: 10px; /* Space between logos */
+  margin-top: 10px; /* Space above the logos */
+  justify-content: center; /* Center logos horizontally */
+  align-items: center; /* Center logos vertically */
+}
+
+.project-logo {
+  max-height: 40px; /* Adjust height to ensure uniform size */
+  width: auto; /* Maintain aspect ratio */
 }
 
 .blog-card {
