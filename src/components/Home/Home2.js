@@ -17,6 +17,29 @@ import javascriptLogo from "../../Assets/Logos/javascript_logo.png";
 import goLogo from "../../Assets/Logos/go_logo.png";
 import cppLogo from "../../Assets/Logos/cpp_logo.svg";
 import rosLogo from "../../Assets/Logos/ros_logo.png";
+import inventorLogo from "../../Assets/Logos/inventor_logo.png"
+import fusion360Logo from "../../Assets/Logos/fusion360_logo_2.png"
+import printing3dLogo from "../../Assets/Logos/3dprint_logo.jpg"
+import unityLogo from "../../Assets/Logos/Unity_logo.png"
+import unrealLogo from "../../Assets/Logos/UE_logo.png"
+
+// This is wayyy tooo ugly XD 
+// import {
+//   DiJavascript1,
+//   DiJava,
+//   DiReact,
+//   DiNodejs,
+//   DiPython,
+//   DiGo,
+// } from "react-icons/di";
+// import { 
+//   SiCsharp,
+//   SiCplusplus,
+//   SiUnrealengine,
+// } from "react-icons/si";
+// import {
+//   FaUnity
+// } from "react-icons/fa";
 
 
 function Home2() {
@@ -47,37 +70,54 @@ function Home2() {
               <br />
               <br />I am proficient in:
               <br />
+              {/* <Row style={{ justifyContent: "center", paddingBottom: "50px" }}> */}
               <Row className="home-proficiency-logo-row justify-content-center">
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <SiCplusplus className="tech-icons" /> */}
                   <img src={csharpLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <DiPython className="tech-icons" /> */}
                   <img src={pythonLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <DiJava className="tech-icons" /> */}
                   <img src={javaLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <DiJavascript1 className="tech-icons" /> */}
                   <img src={javascriptLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <DiGo className="tech-icons" /> */}
                   <img src={goLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  {/* <SiCplusplus className="tech-icons" /> */}
                   <img src={cppLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
                   <img src={rosLogo} className="home-proficiency-logo-image" />
                 </Col>
               </Row>
-              <i>
-                <b className="highlight"> C#, Python, Java, Javascript, GO, C++. </b>
-              </i>
+              <Row className="home-proficiency-logo-row justify-content-center">
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={inventorLogo} className="home-proficiency-logo-image" />
+                </Col>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={fusion360Logo} className="home-proficiency-logo-image" />
+                </Col>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={printing3dLogo} className="home-proficiency-logo-image" />
+                </Col>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={unityLogo} className="home-proficiency-logo-image" />
+                </Col>
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={unrealLogo} className="home-proficiency-logo-image" />
+                </Col>
+              </Row>
               <br />
-              <i>
-                <b className="highlight"> ROS, CAD, 3D Printing, Unity, Unreal. </b>
-              </i>
-              <br /><br />
               I am currently learning more about:
               <br />
               <i>

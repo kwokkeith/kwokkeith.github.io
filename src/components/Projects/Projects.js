@@ -19,6 +19,22 @@ import verilogLogo from "../../Assets/Logos/verilog-logo.png"
 import enigmaMachineImg from "../../Assets/Projects/EnigmaMachine.jpeg"
 import rustLogo from "../../Assets/Logos/rust_logo.png"
 import javaLogo from "../../Assets/Logos/java_logo.png"
+import knightImg from "../../Assets/Projects/knight.png"
+import catalystStoryImg from "../../Assets/Projects/MindfulHacks.jpeg"
+import raftConsensusImg from "../../Assets/Projects/raftConsensus.png"
+import unityLogo from "../../Assets/Logos/Unity_logo.png"
+import golangLogo from "../../Assets/Logos/go_logo.png"
+import cppLogo from "../../Assets/Logos/cpp_logo.svg"
+import unrealLogo from "../../Assets/Logos/UE_logo_light.png" 
+import flightDynamicImg from "../../Assets/Projects/FlightDynamics.png"
+import illuminateDarknessImg from "../../Assets/Projects/IlluminateDarkness.png"
+import roboclash2022Img from "../../Assets/Projects/roboclash2022.jpg"
+import arduinoLogo from "../../Assets/Logos/arduino_logo.png"
+import fusion360Logo from "../../Assets/Logos/fusion360_logo_2.png"
+import inventorLogo from "../../Assets/Logos/inventor_logo.png"
+import roboclash2023Img from "../../Assets/Projects/roboclash2023.jpeg"
+import arProjectImg from "../../Assets/Projects/ARProject.png"
+
 
 function Projects() {
   return (
@@ -29,7 +45,7 @@ function Projects() {
           <strong className="purple">Highlights </strong>
         </h1>
         <p style={{ color: "white" }}>
-          :Here are a few projects I especially enjoyed working on:
+          : Here are a few projects I especially enjoyed working on :
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -38,7 +54,7 @@ function Projects() {
               isBlog={false}
               title="ConcurSolutionz"
               description=
-              "Automation for student claims that interfaces with the SAP Concur system and uses Optical Character Recognition. This project allowed me to apply software engineering skills and project management skills such as scrum project planning, UML designs, sequence diagrams, design-patterns, unit test cases, control flow graphs and Object-Oriented Programming."
+              "Automation for student claims that interfaces with the SAP Concur system and uses Optical Character Recognition. This project allowed me to apply software engineering skills and project management skills such as Agile project planning, UML designs, sequence diagrams, design-patterns, unit test cases, control flow graphs and Object-Oriented Programming."
               ghLink="https://github.com/kwokkeith/ConcurSolutionz"
               demoLink="https://www.youtube.com/watch?v=O2sew6b3bDg"
               logos={[
@@ -70,7 +86,7 @@ function Projects() {
               isBlog={false}
               title="u8EnigmaMachine"
               description=
-              "Together with my friend, this cybersecurity project was done for a Capture the Flag challenge. It contains two challenges which requires one to decipher a UTF-8 enigma generated code.
+              "This cybersecurity project was done for a Capture the Flag challenge. It contains two challenges which requires one to decipher a UTF-8 enigma generated code.
               This project requires an understanding on the mechanism of the Enigma machine to perform the encryption and decryption. The solution cracker was developed in Rust."
               ghLink="https://github.com/kwokkeith/u8EnigmaMachine"
               demoLink="https://www.youtube.com/watch?v=hAaXjnVS9QQ"
@@ -81,79 +97,141 @@ function Projects() {
             />
           </Col>
         </Row>
+        
         <h1 className="project-heading">
           All <strong className="purple">projects</strong>
         </h1>
+        
         <p style={{ color: "white" }}>
-          :Here are some of my past projects:
+          : Here are some of my past projects :
         </p>
+        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={knightImg}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Chessboard AI"
+              description="An AI that plays a variant of chess called knights-through against a player by using a experimental heurestic to play strategic moves."
+              ghLink="https://github.com/kwokkeith/ChessBoardAI"
+              logos={[
+                javaLogo,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={catalystStoryImg}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Catalyst Story"
+              description="A Mental Wellness RPG game (The Catalyst) that encourages journaling as a mental wellness routine by incentivising it to help those living with mental health conditions in the community. 
+              The game was developed in Unity and features a leveling/stat system based on what the user has written in a journal. It also features mental health techniques from stakeholders such as Chatty Caterpillar." 
+              ghLink="https://github.com/kwokkeith/CatalystStory"
+              demoLink="https://devpost.com/software/the-catalyst-rpg?ref_content=user-portfolio&ref_feature=in_progress"
+              logos={[
+                csLogo,
+                unityLogo,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={raftConsensusImg}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Raft Consensus"
+              description="An implementation of the Raft Consensus by Diego Ongaro and John Ousterhout (In Search of an Understandable Consensus Algorithm) in GO developed from scratch. This project allowed for a deeper appreciation for consensus algorithms in Concurrent and Distributed Programming."
+              ghLink="https://github.com/kwokkeith/RaftConsensus"         
+              logos={[
+                golangLogo,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={flightDynamicImg}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Flight Dynamics (Unreal Plugin)"
+              description="An unreal engine plugin meant to simulate flight mechanics that allows for reusablility using Unreal Blueprint.
+              This project was a good blend between aerodynamics and software programming."
+              ghLink="https://github.com/kwokkeith/FlightDynamics"
+              demoLink="https://youtu.be/eRSFp7k56u0"
+              logos={[
+                cppLogo,
+                unrealLogo,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={illuminateDarknessImg}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Illuminate Darkness (Social Project)"
+              description="A social project done as part of an intra-university competition by JTC. Illuminate Darkness creates a positive environment that inspires social interaction using data-driven methods and the attractiveness of light. 
+              The prototype consisted of a 1:10 scale programmable physical orb, 1:1 scale interactable luminous floor and a 1:1 scale virtual prototype developed in Unity. It showcases programmed light shows as well as particle effect patterns for the orb lighting.
+              The physical prototypes were then synchronised with the virtualisation using User-Datagram Protocol creating an aesthetic light show in real life.
+              This project was nominated for the JTC Awards."
+              demoLink="https://www.youtube.com/watch?v=q0iS_8MAur0&t=797s"
+              logos={[
+                csLogo,
+                unityLogo,
+              ]}
             />
           </Col> 
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={roboclash2022Img}
+              isBlog={false}
+              title="Roboclash (2022)"
+              description="2nd Runner Up, Lionsbot (Sponsor) Award for most innovative robot. Our robot uses suction mechanism to carry cubes and mecanum wheels to allow adaptive control of robot.
+              The claw was designed to grasp balls quickly and precisely onto the robot to win this competition. The robot was designed with Arduino, Autodesk Inventor and Fusion, with 3D printed parts as well as lego parts.
+              Communication of the robot was done through wireless and radio connection."
+              demoLink="https://youtu.be/x6DekIAb_U0"
+              logos={[
+                arduinoLogo,
+                fusion360Logo,
+                inventorLogo
+              ]}
+            />
+          </Col> 
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={roboclash2023Img}
+              isBlog={false}
+              title="Roboclash (2023)"
+              description="Winner, Engineering Award, Technology Award. Our robot uses an innovative suction mechanism using a compressor fan and a vacuum tube to pick balls up rapidly. The robot also uses a high torque motor and mecanum wheels to provide omni-directional movements. 
+              The robot was designed and developed using Autodesk Inventor, Autodesk Fusion, Arduino and ESP-32 for wireless communication."
+              ghLink="https://github.com/kwokkeith/GordonBot23"
+              demoLink="https://www.youtube.com/watch?v=wvjeGbIFvdk"
+              logos={[
+                arduinoLogo,
+                fusion360Logo,
+                inventorLogo 
+              ]}
+            />
+          </Col> 
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={arProjectImg}
+              isBlog={false}
+              title="Augmented Reality Operation Training"
+              description="This was a project done during my internship at Pratt and Whitney. I developed an immersive and interactive operation training for the use of Abrasive Wheel Operation using augmented reality that saved up to 16 training hours, amounting to 220 turbine blades worth of profit for every 2 trainees.
+              The machines used in the training were modelled using Autodesk Inventor and the interactive software was developed using Unity and Vuforia. The project was well received and has been implemented into the current training."
+              demoLink="https://youtu.be/5F-Ssf-Ro3k?feature=shared&t=131"
+              logos={[
+                csLogo,
+                unityLogo,
+                inventorLogo,
+              ]}
+            />
+          </Col> 
+
         </Row>
       </Container>
     </Container>
