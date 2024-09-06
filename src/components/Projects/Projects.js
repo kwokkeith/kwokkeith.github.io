@@ -48,7 +48,7 @@ function Projects() {
           : Here are a few projects I especially enjoyed working on :
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={sapLogo}
               isBlog={false}
@@ -63,7 +63,7 @@ function Projects() {
               ]}
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={othelloBeepImg}
               isBlog={false}
@@ -80,7 +80,7 @@ function Projects() {
               ]} 
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={enigmaMachineImg}
               isBlog={false}
@@ -107,7 +107,7 @@ function Projects() {
         </p>
         
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+        <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={knightImg}
               isBlog={false}
@@ -120,7 +120,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={catalystStoryImg}
               isBlog={false}
@@ -136,7 +136,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={raftConsensusImg}
               isBlog={false}
@@ -149,7 +149,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={flightDynamicImg}
               isBlog={false}
@@ -165,7 +165,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={illuminateDarknessImg}
               isBlog={false}
@@ -182,7 +182,7 @@ function Projects() {
             />
           </Col> 
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={roboclash2022Img}
               isBlog={false}
@@ -199,7 +199,7 @@ function Projects() {
             />
           </Col> 
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={roboclash2023Img}
               isBlog={false}
@@ -216,7 +216,7 @@ function Projects() {
             />
           </Col> 
 
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={arProjectImg}
               isBlog={false}

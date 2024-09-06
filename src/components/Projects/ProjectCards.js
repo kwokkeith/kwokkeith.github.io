@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
@@ -7,21 +8,24 @@ import { BsGithub, BsYoutube } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} alt="card-img" className="project-card-image"/>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         
         {props.logos && props.logos.length > 0 && (
-          <div className="project-logos">
+          <Row className="project-logos">
             {props.logos.map((logo, index) => (
-              <img
-                key={index} 
-                src={logo} 
-                alt={`logo-${index}`} 
-                style={{ maxHeight: '40px', width: 'auto' }} 
-              />
+              <Col>
+                <img
+                  key={index} 
+                  src={logo} 
+                  alt={`logo-${index}`}
+                  className="project-logo-image"
+                >
+                </img>
+              </Col>
             ))}
-          </div>
+          </Row>
         )}
 
         <Card.Text style={{ textAlign: "justify" }}>

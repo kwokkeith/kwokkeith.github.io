@@ -7,14 +7,21 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+// import {
+//   AiFillStar,
+//   AiOutlineHome,
+//   AiOutlineFundProjectionScreen,
+//   AiOutlineUser,
+// } from "react-icons/ai";
 import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+  FaHome,
+  FaProjectDiagram,
+  Fa
+} from "react-icons/fa"
 
-import { CgFileDocument } from "react-icons/cg";
+import {
+  IoDocumentText
+} from "react-icons/io5"
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -54,8 +61,12 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link 
+                as={Link} 
+                to="/" 
+                onClick={() => updateExpanded(false)}
+              >
+                <FaHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -75,7 +86,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <FaProjectDiagram
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
@@ -88,7 +99,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <IoDocumentText style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
