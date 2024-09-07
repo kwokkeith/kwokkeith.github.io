@@ -22,10 +22,10 @@ import javaLogo from "../../Assets/Logos/java_logo.png"
 import knightImg from "../../Assets/Projects/knight.png"
 import catalystStoryImg from "../../Assets/Projects/MindfulHacks.jpeg"
 import raftConsensusImg from "../../Assets/Projects/raftConsensus.png"
-import unityLogo from "../../Assets/Logos/Unity_logo.png"
+import unityLogo from "../../Assets/Logos/unity_logo_light.png"
 import golangLogo from "../../Assets/Logos/go_logo.png"
 import cppLogo from "../../Assets/Logos/cpp_logo.svg"
-import unrealLogo from "../../Assets/Logos/UE_logo_light.png" 
+import unrealLogo from "../../Assets/Logos/UE_logo.png" 
 import flightDynamicImg from "../../Assets/Projects/FlightDynamics.png"
 import illuminateDarknessImg from "../../Assets/Projects/IlluminateDarkness.png"
 import roboclash2022Img from "../../Assets/Projects/roboclash2022.jpg"
@@ -44,7 +44,7 @@ function Projects() {
         <h1 className="project-heading">
           <strong className="purple">Highlights </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p>
           : Here are a few projects I especially enjoyed working on :
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -102,7 +102,7 @@ function Projects() {
           All <strong className="purple">projects</strong>
         </h1>
         
-        <p style={{ color: "white" }}>
+        <p>
           : Here are some of my past projects :
         </p>
         

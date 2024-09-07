@@ -10,7 +10,7 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" className="project-card-image"/>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title className="project-card-title">{props.title}</Card.Title>
         
         {props.logos && props.logos.length > 0 && (
           <Row className="project-logos">

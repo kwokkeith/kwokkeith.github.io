@@ -20,7 +20,7 @@ import rosLogo from "../../Assets/Logos/ros_logo.png";
 import inventorLogo from "../../Assets/Logos/inventor_logo.png"
 import fusion360Logo from "../../Assets/Logos/fusion360_logo_2.png"
 import printing3dLogo from "../../Assets/Logos/3dprint_logo.jpg"
-import unityLogo from "../../Assets/Logos/Unity_logo.png"
+import unityLogo from "../../Assets/Logos/unity_logo_light.png"
 import unrealLogo from "../../Assets/Logos/UE_logo.png"
 
 // This is wayyy tooo ugly XD 
