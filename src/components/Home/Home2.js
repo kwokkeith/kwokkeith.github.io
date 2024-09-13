@@ -52,21 +52,17 @@ function Home2() {
               THIS IS <span className="highlight"> ME </span> !
             </h1>
             <p className="home-about-body">
-              I'm a lifelong learner, always fascinated by how things work. 
-              My passion led me to study Aeronautical Engineering at Singapore Polytechnic, 
-              where I worked with aircrafts like the B737 and B747. 
-              My studies in aeronautics further sparked my interest in programming where I learnt Object Oriented Programming in C# (my first langauge). 
-              During an internship with Pratt & Whitney, my love for programming flourished as I created an interactive training manual 
-              in Augmented Reality using Unity, Vuforia, and C#.
+              I've been an avid learner my entire life because I find the world fascinating. My first passion was Aeronautical Engineering,
+              which I studied at Singapore Polytechnic. I got to work with B737s and B747s!  Later on in my studies, I became interested 
+              in Object Oriented Programming through C#. During an internship with Pratt & Whitney, my love for programming deepened as 
+              I created an interactive training manual in Augmented Reality using Unity, Vuforia, and C#. 
               <br />
               <br />
-              I pursued my further studies in Computer Science and Design.
-              This was where my software development journey took off 🚀. I had a wonderful opportunity to learn from others and 
-              my professors in SUTD. Here, I took the opportunity to try something new in every project assigned to me. I learnt about the fundamentals of
-              operating system as well as developing my own instruction set architecture for an arcade game called OthelloBeep!. 
-
-              I've also gained a multidisciplinary experience from my commitment in robotics in school. Together with my best friends in school, we have won 
-              two robotics competitions and we are currently working on a cleaning robot for our final project with the Changi Airport Group!
+              I decided to purse studies in Computer Science and Design at SUTD. This was where my software development journey took off 🚀 
+              - I learned about the fundamentals of operating systems and even developed my own instruction set architecture for an arcade 
+              game called OthelloBeep! I also gained more hardware experience from my work with robotics. Together with my best friends in 
+              school, we have won robotics competitions and are currently working on a cleaning robot for our capstone project with the 
+              Changi Airport Group.
               <br />
               <br />I am proficient in:
               <br />
@@ -125,10 +121,9 @@ function Home2() {
               </i> 
               <br />
               <br />
-              I love to apply my passion for learning! I believe in
-              a multidisciplinary approach to solving problems and I love to learn on the go.
-              You're likely to find me working on projects across various disciplines, exploring different fields and technologies.
-              There is so much that interest me and I would love to learn with you!
+              I love learning and I believe in a multidisciplinary approach to solving problems. 
+              I am looking for an opportunity to grow while working on projects across various disciplines, 
+              exploring different fields and technologies!
             </p>
           </Col>
           <br />
