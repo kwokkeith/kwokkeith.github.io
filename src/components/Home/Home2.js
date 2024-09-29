@@ -58,7 +58,7 @@ function Home2() {
               I created an interactive training manual in Augmented Reality using Unity, Vuforia, and C#. 
               <br />
               <br />
-              I decided to pursue studies in Computer Science and Design at SUTD. This was where my software development journey took off 🚀 
+              I decided to pursue my studies in Computer Science and Design at SUTD. This was where my software development journey took off 🚀 
               - I learned about the fundamentals of operating systems and even developed my own instruction set architecture for an arcade 
               game called OthelloBeep! I also gained more hardware experience from my work with robotics. Together with my best friends in 
               school, we have won robotics competitions and are currently working on a cleaning robot for our capstone project with the 
