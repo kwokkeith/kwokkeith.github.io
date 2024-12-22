@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ea901f96.css",
-    "main.js": "/Portfolio/static/js/main.677160b0.js",
+    "main.js": "/Portfolio/static/js/main.18822c6d.js",
     "static/js/415.f3233506.chunk.js": "/Portfolio/static/js/415.f3233506.chunk.js",
     "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
     "static/media/avatar.png": "/Portfolio/static/media/avatar.11ac55882c3ca58a9949.png",
+    "static/media/UiUx_Img.png": "/Portfolio/static/media/UiUx_Img.bf9e5e07e1f685f44967.png",
     "static/media/IlluminateDarkness.png": "/Portfolio/static/media/IlluminateDarkness.eb6883474b859cf44f4e.png",
     "static/media/home-main.png": "/Portfolio/static/media/home-main.701830291334970d51a7.png",
     "static/media/EnigmaMachine.jpeg": "/Portfolio/static/media/EnigmaMachine.7d6bc5237d1d904fef6a.jpeg",
@@ -24,11 +25,13 @@
     "static/media/roboclash2023.jpeg": "/Portfolio/static/media/roboclash2023.d3b35f07f9acb66d5a55.jpeg",
     "static/media/ros_logo.png": "/Portfolio/static/media/ros_logo.f46749e3cccbd372ea80.png",
     "static/media/ARProject.png": "/Portfolio/static/media/ARProject.fab9b441a047d9b8c53b.png",
+    "static/media/webAssembly_logo.png": "/Portfolio/static/media/webAssembly_logo.2ee4f3a8d31b64ce4189.png",
     "static/media/rust_logo.png": "/Portfolio/static/media/rust_logo.ee9fa57a091cf567bdcf.png",
     "static/media/SAP_logo.png": "/Portfolio/static/media/SAP_logo.6870b22ab79db3f95835.png",
     "static/media/alchitry_logo.png": "/Portfolio/static/media/alchitry_logo.185f0b19d01cf4e8992c.png",
     "static/media/go_logo.png": "/Portfolio/static/media/go_logo.6a3cd1884425f3b03c7d.png",
     "static/media/verilog-logo.png": "/Portfolio/static/media/verilog-logo.868b4f044ff5b0c22863.png",
+    "static/media/figma_logo.png": "/Portfolio/static/media/figma_logo.1475cc523b5f4c537bd9.png",
     "static/media/3dprint_logo.jpg": "/Portfolio/static/media/3dprint_logo.5cfd065f7a2ffb3900c7.jpg",
     "static/media/knight.png": "/Portfolio/static/media/knight.ad61968b17b488fe1f93.png",
     "static/media/inventor_logo.png": "/Portfolio/static/media/inventor_logo.d5a32b2b3de583ea66a9.png",
@@ -36,12 +39,12 @@
     "static/media/cpp_logo.svg": "/Portfolio/static/media/cpp_logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/Portfolio/index.html",
     "main.ea901f96.css.map": "/Portfolio/static/css/main.ea901f96.css.map",
-    "main.677160b0.js.map": "/Portfolio/static/js/main.677160b0.js.map",
+    "main.18822c6d.js.map": "/Portfolio/static/js/main.18822c6d.js.map",
     "415.f3233506.chunk.js.map": "/Portfolio/static/js/415.f3233506.chunk.js.map",
     "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea901f96.css",
-    "static/js/main.677160b0.js"
+    "static/js/main.18822c6d.js"
   ]
 }
