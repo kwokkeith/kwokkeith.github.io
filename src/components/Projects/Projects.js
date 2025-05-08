@@ -28,7 +28,16 @@ import fusion360Logo from "../../Assets/Logos/fusion360_logo_2.png"
 import inventorLogo from "../../Assets/Logos/inventor_logo.png"
 import roboclash2023Img from "../../Assets/Projects/roboclash2023.jpeg"
 import arProjectImg from "../../Assets/Projects/ARProject.png"
-
+import haskellLogo from "../../Assets/Logos/Haskell_Logo.png"
+import webAssemblyImg from "../../Assets/Logos/webAssembly_logo.png"
+import uiuxImg from "../../Assets/Projects/UiUx_Img.png"
+import figmaLogo from "../../Assets/Logos/figma_logo.png"
+import dv8Img from "../../Assets/Projects/dv8.jpeg"
+import rosLogo from "../../Assets/Logos/ros_logo.png"
+import reactLogo from "../../Assets/Logos/react_logo.svg"
+import mySqlLogo from "../../Assets/Logos/mysql_logo.png"
+import aslModelImg from "../../Assets/Projects/aslAi.jpg"
+import tensorFlowLogo from "../../Assets/Logos/tensorflow_logo.png"
 
 function Projects() {
   return (
@@ -42,6 +51,22 @@ function Projects() {
           : Here are a few projects I especially enjoyed working on :
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col lg={4} md={6} xs={12} className="project-card">
+            <ProjectCard
+              imgPath={dv8Img}
+              isBlog={false}
+              title="AI Spot Cleaning Robot (DV8)"
+              description=
+              "I developed the full navigation stack and AI-powered litter detection for the DV8 robot used in Singapore's Changi Airport using ROS Noetic, enabling autonomous mapping, localisation, and spot cleaning. My work spanned the entire software stack—from UI and database integration to navigation and behaviour control. I also designed the custom algorithm behind the robot’s intelligent spot cleaning capability."
+              ghLink="https://github.com/kwokkeith/Kepstone_Experimental_Robot.git"
+              demoLink="https://youtube.com/playlist?list=PLl0ZKY4hbnYgEnyBCW2wVflFwFmwfRKof&feature=shared"
+              logos={[
+                rosLogo,
+                cppLogo,
+                mySqlLogo,
+              ]}
+            />
+          </Col>
           <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={sapLogo}
@@ -59,36 +84,17 @@ function Projects() {
           </Col>
           <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
-              imgPath={othelloBeepImg}
+              imgPath={aslModelImg}
               isBlog={false}
-              title="OthelloBeep"
+              title="Sign Language Intepreter Model"
               description=
-              "My team developed a unique Instruction Set Architecture (ISA) based on the Beta CPU from MIT to programme the game of Othello on a Field Programmable Gate Array (FPGA).
-              This project was challenging but extremely rewarding with application in computer structures, hardware description language and machine language coding.
-              A simulation was also developed for ease of testing our brand new ISA!"
-              ghLink="https://github.com/kwokkeith/50002-OthelloBeep"
-              demoLink="https://youtu.be/B0zMODB_oGo"
+              "Built a multi-stage deep learning system that classifies ASL gestures as dynamic or static using logistic regression, then routes them to an LSTM (for dynamic) or feedforward network (for static) trained on MediaPipe landmarks. Outputs are interpreted by a large language model using a custom ASL-to-English grammar for natural language generation."
+              ghLink="https://github.com/kwokkeith/ASL-Translation-Model.git"
+              demoLink="https://youtu.be/MeLZG1cvk4M"
               logos={[
-                alchitryLogo,
-                verilogLogo,
-              ]} 
-            />
-          </Col>
-          <Col lg={4} md={6} xs={12} className="project-card">
-            <ProjectCard
-              imgPath={enigmaMachineImg}
-              isBlog={false}
-              title="u8EnigmaMachine"
-              description=
-              "This cybersecurity project was done for a Capture the Flag challenge. It contains two challenges which requires one to decipher a UTF-8 enigma generated code.
-              This project requires an understanding on the mechanism of the Enigma machine to perform the encryption and decryption. The solution cracker was developed in Rust."
-              ghLink="https://github.com/kwokkeith/u8EnigmaMachine"
-              demoLink="https://www.youtube.com/watch?v=hAaXjnVS9QQ"
-              logos={[
-                rustLogo,
-                javaLogo,
+                tensorFlowLogo,
               ]}
-            />
+            /> 
           </Col>
         </Row>
         
@@ -99,8 +105,69 @@ function Projects() {
         <p>
           : Here are some of my past projects :
         </p>
-        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col lg={4} md={6} xs={12} className="project-card">
+          <ProjectCard
+            imgPath={enigmaMachineImg}
+            isBlog={false}
+            title="u8EnigmaMachine"
+            description=
+            "This cybersecurity project was done for a Capture the Flag challenge. It contains two challenges which requires one to decipher a UTF-8 enigma generated code.
+            This project requires an understanding on the mechanism of the Enigma machine to perform the encryption and decryption. The solution cracker was developed in Rust."
+            ghLink="https://github.com/kwokkeith/u8EnigmaMachine"
+            demoLink="https://www.youtube.com/watch?v=hAaXjnVS9QQ"
+            logos={[
+              rustLogo,
+              javaLogo,
+            ]}
+          />
+        </Col>
+        <Col lg={4} md={6} xs={12} className="project-card">
+          <ProjectCard
+            imgPath={othelloBeepImg}
+            isBlog={false}
+            title="OthelloBeep"
+            description=
+            "My team developed a unique Instruction Set Architecture (ISA) based on the Beta CPU from MIT to programme the game of Othello on a Field Programmable Gate Array (FPGA).
+            This project was challenging but extremely rewarding with application in computer structures, hardware description language and machine language coding.
+            A simulation was also developed for ease of testing our brand new ISA!"
+            ghLink="https://github.com/kwokkeith/50002-OthelloBeep"
+            demoLink="https://youtu.be/B0zMODB_oGo"
+            logos={[
+              alchitryLogo,
+              verilogLogo,
+            ]} 
+          />
+        </Col>
+        <Col lg={4} md={6} xs={12} className="project-card">
+            <ProjectCard
+              imgPath={webAssemblyImg}
+              isBlog={false}
+              title="Web Assembly Compiler"
+              description="A compiler designed to translate SIMP language into WebAssembly, built using Haskell with a Yesod-based frontend. It encompasses the entire compilation pipeline, including lexing, parsing, static analysis, optimisation, and code generation, delivering efficient and portable WebAssembly output."
+              ghLink="https://github.com/kwokkeith/SIMP"
+              demoLink="https://youtu.be/7d5i8Q5DbVQ"
+              logos={[
+                haskellLogo,
+              ]}
+            />
+        </Col>
+        
+        <Col lg={4} md={6} xs={12} className="project-card">
+            <ProjectCard
+              imgPath={uiuxImg}
+              isBlog={false}
+              title="Improving Course Enrolment in SUTD (UI/UX)"
+              description="This project focuses on enhancing the course enrolment experience for SUTD students by identifying and addressing pain points through comprehensive user surveys and in-depth UI/UX research. The goal is to create a user-centred, intuitive design that simplifies the enrolment process, improves functionality, and reduces student frustration."
+              ghLink="https://github.com/kwokkeith/HiFi_UI_Course_Enrolment.git"
+              demoLink="https://youtu.be/xav18oKZRGU"
+              logos={[
+                golangLogo, 
+                figmaLogo,
+              ]}
+            />
+        </Col>
+
         <Col lg={4} md={6} xs={12} className="project-card">
             <ProjectCard
               imgPath={knightImg}

@@ -22,6 +22,7 @@ import fusion360Logo from "../../Assets/Logos/fusion360_logo_2.png"
 import printing3dLogo from "../../Assets/Logos/3dprint_logo.jpg"
 import unityLogo from "../../Assets/Logos/unity_logo_light.png"
 import unrealLogo from "../../Assets/Logos/UE_logo.png"
+import haskellLogo from "../../Assets/Logos/Haskell_Logo.png"
 
 // This is wayyy tooo ugly XD 
 // import {
@@ -93,10 +94,13 @@ function Home2() {
                   <img src={cppLogo} className="home-proficiency-logo-image" />
                 </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
-                  <img src={rosLogo} className="home-proficiency-logo-image" />
+                  <img src={haskellLogo} className="home-proficiency-logo-image" style={{ width: "80px", height: "auto" }} />
                 </Col>
               </Row>
               <Row className="home-proficiency-logo-row justify-content-center">
+                <Col className="d-flex justify-content-center home-proficiency-logo-col">
+                  <img src={rosLogo} className="home-proficiency-logo-image" />
+                </Col>
                 <Col className="d-flex justify-content-center home-proficiency-logo-col">
                   <img src={inventorLogo} className="home-proficiency-logo-image" />
                 </Col>

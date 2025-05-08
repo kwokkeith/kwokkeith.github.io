@@ -22,3 +22,7 @@ Project Dependencies:
 1. Installation: `npm install`
 
 2. In the project directory, you can run: `npm start`
+
+## To Deploy to Git Pages
+
+1. `npm run deploy`
