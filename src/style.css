@@ -670,7 +670,11 @@ button:focus {
 /* Section rhythm */
 .pp-section {
   padding: 48px 0 32px;
-  border-top: 1px solid #f3f4f6;
+  border-top: 1px solid #1f2937;
+}
+
+.pp-section:first-of-type {
+  border-top: none;
 }
 
 .pp-section--all {
@@ -1134,8 +1138,8 @@ button:focus {
   border-radius: 8px;
   margin-left: -12px;
   margin-right: -12px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .hp-section__heading {
@@ -1361,8 +1365,21 @@ button:focus {
   display: flex;
   align-items: flex-start;
   gap: 0;
-  padding: 8px 0;
+  padding: 8px 0 8px 48px; /* left padding creates space for the tail */
   overflow-x: auto;
+  position: relative;
+}
+
+/* Tail extending left from first dot */
+.hp-timeline__node:first-child::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -48px;
+  width: 48px;
+  height: 2px;
+  background-color: #e5e7eb;
+  z-index: 0;
 }
 
 .hp-timeline__node {
@@ -1917,6 +1934,10 @@ button:focus {
 
 /* Timeline */
 .dark .hp-timeline__line {
+  background-color: #374151;
+}
+
+.dark .hp-timeline__node:first-child::before {
   background-color: #374151;
 }
 
