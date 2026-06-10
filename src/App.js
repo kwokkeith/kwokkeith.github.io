@@ -38,7 +38,7 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
-        <FloatingContact />
+        {/* <FloatingContact /> */}
         <ThemeBubble darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </Router>
