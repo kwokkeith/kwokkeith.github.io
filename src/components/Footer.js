@@ -11,14 +11,14 @@ function Footer() {
       <Container fluid>
         <Row className="align-items-center">
           <Col md={6} className="site-footer__copy">
-            Kwok Keith &copy; {year}
+            Keith Kwok &copy; {year}
           </Col>
           <Col md={6} className="site-footer__links">
             <a href="mailto:keithkwok99@gmail.com" className="site-footer__link" aria-label="Email">
               <FaEnvelope />
               <span>Email</span>
             </a>
-            <a href="https://scholar.google.com" target="_blank" rel="noreferrer" className="site-footer__link" aria-label="Google Scholar">
+            <a href="https://scholar.google.com/citations?user=sWWi37YAAAAJ" target="_blank" rel="noreferrer" className="site-footer__link" aria-label="Google Scholar">
               <SiGooglescholar />
               <span>Scholar</span>
             </a>

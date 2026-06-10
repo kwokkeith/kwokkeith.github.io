@@ -1,19 +1,33 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    #ffd78e9d,
-    #f2b63da8, 
-  );
-
-  --image-gradient: linear-gradient(
-    135deg, #ffd8b5b1 0%, #ffba97a2 100%
-  );
-
+  --section-background-color: none;
+  --image-gradient: none;
   --imp-text-color: #8A2BE2;
 }
 
 .highlight {
   color: var(--imp-text-color) !important;
+  font-weight: 700;
+  /* Inherit the parent font-weight for non-bold context if needed */
+}
+
+/* Ensure paragraph text inside hero and focus sections is consistent weight */
+.hp-hero__summary,
+.hp-hero__summary * {
+  font-weight: 450;
+}
+
+.hp-hero__summary .highlight,
+.hp-section__body .highlight {
+  font-weight: 700;
+}
+
+.hp-section__body,
+.hp-section__body * {
+  font-weight: 450;
+}
+
+.hp-section__body .highlight {
+  font-weight: 700;
 }
 
 h1, h2, h3, p {
@@ -173,8 +187,8 @@ button:focus {
   position: fixed;
   bottom: 32px;
   right: 32px;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(16px) saturate(180%);
@@ -184,7 +198,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #374151;
   cursor: pointer;
   z-index: 999;
@@ -371,11 +385,8 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover !important;
+  background-color: #ffffff;
+  background-image: none;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -599,20 +610,22 @@ button:focus {
 .site-footer__link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.78rem;
+  gap: 6px;
+  font-size: 0.82rem;
   font-weight: 500;
   color: #9ca3af;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
-  transition: color 0.15s ease, background-color 0.15s ease;
+  border: 1px solid transparent;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .site-footer__link:hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .site-footer__link svg {
@@ -861,8 +874,9 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #111827 !important;
 }
 
 .tech-icons {
@@ -921,8 +935,9 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #111827 !important;
 }
 
 .resume {
@@ -1124,7 +1139,7 @@ button:focus {
 }
 
 .hp-section__heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #111827;
   text-transform: uppercase;
@@ -1134,11 +1149,11 @@ button:focus {
 }
 
 .hp-section__body {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
-  color: #374151;
+  color: #1f2937;
   max-width: 780px;
-  font-weight: 400;
+  font-weight: 450;
   text-shadow: none;
 }
 
@@ -1186,7 +1201,7 @@ button:focus {
 }
 
 .hp-hero__title {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #6b7280;
   font-weight: 500;
   margin-bottom: 16px;
@@ -1194,12 +1209,12 @@ button:focus {
 }
 
 .hp-hero__summary {
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   line-height: 1.75;
-  color: #374151;
+  color: #1f2937;
   max-width: 640px;
   margin-bottom: 16px;
-  font-weight: 400;
+  font-weight: 450;
   text-shadow: none;
 }
 
@@ -1283,7 +1298,7 @@ button:focus {
 }
 
 .hp-updates__date {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #6b7280;
   white-space: nowrap;
@@ -1292,9 +1307,9 @@ button:focus {
 }
 
 .hp-updates__text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #374151;
-  font-weight: 400;
+  font-weight: 450;
   text-shadow: none;
 }
 
@@ -1381,7 +1396,7 @@ button:focus {
 }
 
 .hp-timeline__year {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: #4f46e5;
   margin-bottom: 1px;
@@ -1389,7 +1404,7 @@ button:focus {
 }
 
 .hp-timeline__label {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #111827;
   text-align: center;
@@ -1397,7 +1412,7 @@ button:focus {
 }
 
 .hp-timeline__sub {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: #6b7280;
   text-align: center;
   font-weight: 400;
@@ -1420,7 +1435,7 @@ button:focus {
 }
 
 .hp-experience__period {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #6b7280;
   white-space: nowrap;
@@ -1436,23 +1451,23 @@ button:focus {
 }
 
 .hp-experience__role {
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #111827;
   text-shadow: none;
 }
 
 .hp-experience__org {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   color: #4f46e5;
   font-weight: 500;
   text-shadow: none;
 }
 
 .hp-experience__desc {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   color: #6b7280;
-  font-weight: 400;
+  font-weight: 450;
   margin: 4px 0 0;
   line-height: 1.6;
   text-shadow: none;
@@ -1472,7 +1487,7 @@ button:focus {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   border-left: 2px solid #e5e7eb;
 }
 
@@ -1496,12 +1511,12 @@ button:focus {
 }
 
 .hp-awards__year {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #6b7280;
   white-space: nowrap;
   min-width: 36px;
-  padding-top: 2px;
+  padding-top: 3px;
   text-shadow: none;
 }
 
@@ -1511,14 +1526,69 @@ button:focus {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .hp-awards__entry {
-  font-size: 0.95rem;
-  color: #374151;
-  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hp-awards__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.hp-awards__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
   text-shadow: none;
+}
+
+.hp-awards__desc {
+  font-size: 0.82rem;
+  color: #6b7280;
+  font-weight: 450;
+  text-shadow: none;
+}
+
+/* Tags */
+.hp-awards__tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hp-awards__tag--academic {
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+.hp-awards__tag--scholarship {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.hp-awards__tag--competition {
+  background-color: #dcfce7;
+  color: #15803d;
 }
 
 /* ========================================= */
@@ -1699,6 +1769,7 @@ button:focus {
 .dark {
   background-color: #0f1117;
   color: #e5e7eb;
+  --imp-text-color: #a78bfa;
 }
 
 /* ── Navbar ── */
@@ -1897,8 +1968,27 @@ button:focus {
   color: #9ca3af;
 }
 
-.dark .hp-awards__entry {
-  color: #d1d5db;
+.dark .hp-awards__name {
+  color: #f9fafb;
+}
+
+.dark .hp-awards__desc {
+  color: #9ca3af;
+}
+
+.dark .hp-awards__tag--academic {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+}
+
+.dark .hp-awards__tag--scholarship {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+}
+
+.dark .hp-awards__tag--competition {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #86efac;
 }
 
 /* ── Projects page ── */
@@ -1991,12 +2081,12 @@ button:focus {
 .dark .theme-bubble {
   background: rgba(15, 17, 23, 0.7);
   border-color: rgba(255, 255, 255, 0.1);
-  color: #d1d5db;
+  color: #fbbf24;
 }
 
 .dark .theme-bubble:hover {
-  color: #818cf8;
-  box-shadow: 0 6px 20px rgba(129, 140, 248, 0.2);
+  color: #f59e0b;
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.2);
 }
 
 /* ── Floating contact pill ── */

@@ -20,51 +20,79 @@ const SECTIONS = [
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
-const RESEARCH_SUMMARY =
-  "I am a PhD student at NTU Singapore studying AI safety and alignment, " +
-  "with a focus on infatuation and parasocial dynamics in conversational AI systems. " +
-  "My work builds metrics and safeguards to make AI models safer for emotionally " +
-  "sensitive interactions, advancing AI for social good.";
+const RESEARCH_SUMMARY = () => (
+  <>
+    Hi! I am a PhD student at Nanyang Technological University of Singapore working on{" "}
+    <span className="highlight">AI safety</span> and{" "}
+    <span className="highlight">alignment</span>, building safer and more honest AI systems
+    that resist harmful social dynamics such as{" "}
+    <span className="highlight">sycophancy</span>,{" "}
+    <span className="highlight">emotional manipulation</span>, and{" "}
+    <span className="highlight">parasocial attachment</span>.
+  </>
+);
 
-const RESEARCH_FOCUS =
-  "My research sits at the intersection of AI safety, alignment, and social impact. " +
-  "I investigate how large language models develop and reinforce parasocial relationships " +
-  "with users — particularly infatuation dynamics — and develop quantitative metrics to " +
-  "detect and mitigate these behaviours. Broader interests include human-AI interaction, " +
-  "affective computing, and responsible deployment of conversational AI in high-stakes domains.";
+const RESEARCH_FOCUS = () => (
+  <>
+    My research centres on{" "}
+    <span className="highlight">infatuation</span> and{" "}
+    <span className="highlight">parasocial dynamics</span> in conversational AI systems.
+    I investigate how large language models reinforce unhealthy emotional attachment in users
+    and develop quantitative metrics to detect and mitigate these behaviours. Beyond infatuation,
+    I also explore related alignment problems such as{" "}
+    <span className="highlight">sycophancy</span>, where models learn to prioritise user
+    approval over honesty. Broader interests include{" "}
+    <span className="highlight">human-AI interaction</span>,{" "}
+    <span className="highlight">affective computing</span>, and the responsible deployment
+    of conversational AI in emotionally sensitive contexts.
+  </>
+);
 
 const RECENT_UPDATES = [
-  { date: "Aug 2026", text: "Started PhD in Computer Science at NTU Singapore" },
-  { date: "May 2026", text: "Completed BEng (Computer Science & Design) at SUTD — graduated with Honours" },
+  { date: "Aug 2026", text: "Started PhD in Computer Science at NTU S'pore" },
+  { date: "May 2026", text: "Graduated with Honours - BEng Computer Science at SUTD" },
   { date: "Apr 2026", text: "DV8 autonomous cleaning robot deployed at Changi Airport Group" },
 ];
 
 const PUBLICATIONS = [
   // {
-  //   title: "Measuring Infatuation in Human-AI Dialogue",
-  //   venue: "ACL 2027",
-  //   authors: "Kwok Keith, ...",
-  //   link: "https://arxiv.org/...",
-  //   tag: "AI Safety",
-  // },
+    //   title: "Measuring Infatuation in Human-AI Dialogue",
+    //   venue: "ACL 2027",
+    //   authors: "Kwok Keith, ...",
+    //   link: "https://arxiv.org/...",
+    //   tag: "AI Safety",
+    // },
 ];
 
 const EDUCATION = [
-  { year: "2018", label: "Singapore Polytechnic", sub: "Aerospace Engineering" },
-  { year: "2021", label: "SUTD",                  sub: "Computer Science & Design" },
-  { year: "2026", label: "NTU",                   sub: "PhD, Computer Science" },
+  { year: "2019", label: "SP",                sub: "Aerospace Engineering" },
+  { year: "2021", label: "SUTD",              sub: "BEng, Computer Science & Design" },
+  { year: "2026", label: "NTU S'pore",        sub: "PhD, Computer Science" },
 ];
 
 const EXPERIENCE = [
-  { period: "2023 – 2024", role: "Capstone Engineer",  org: "Changi Airport Group × SUTD", desc: "Built full navigation stack and AI litter-detection system for the DV8 autonomous cleaning robot." },
-  { period: "2022",        role: "AR Software Intern", org: "Pratt & Whitney",              desc: "Developed immersive AR operation training for abrasive wheel machinery, saving 16 training hours per cohort." },
+  { period: "2025 - 2026",        
+    role: "Research Assistant", 
+    org: "DeCLaRe Lab",              
+    desc: "Researching emotional attachment risks in human and AI conversations by developing behavioural metrics and language model based analysis methods for detecting infatuation related interaction patterns."
+  },
+  { period: "2023 - 2024",
+    role: "Undergraduate Research Assistant",
+    org: "Singapore University of Technology and Design",
+    desc: "Researched how students query and interact with LLMs across SUTD courses, characterising learning behaviours and LLM usage patterns. Developed a semantic kernel to specialise GPT response behaviours for educational contexts."
+  },
 ];
 
 const AWARDS = [
-  { year: "2023", text: "Roboclash — Winner, Engineering Award & Technology Award" },
-  { year: "2023", text: "JTC Illuminate Darkness — Nominated for JTC Award" },
-  { year: "2023", text: "MindfulHacks — Catalyst Story mental wellness RPG" },
-  { year: "2022", text: "Roboclash — 2nd Runner Up & Lionsbot Most Innovative Robot Award" },
+  { year: "2025", name: "IMDA Outstanding Student Award",          desc: "Top graduating student, Computer Science & Design, SUTD",               tag: "Academic"     },
+  { year: "2025", name: "Institution of Engineers Singapore Gold Medal", desc: "Top student of graduating cohort, SUTD",                           tag: "Academic"     },
+  { year: "2025", name: "SUTD Global Distinguished Scholarship",   desc: "Top scholarship for high-performing students",                           tag: "Scholarship"  },
+  { year: "2024", name: "SUTD Senior Honours List",                desc: "Top 10% of cohort",                                                      tag: "Academic"     },
+  { year: "2023", name: "SUTD Junior Honours List",                desc: "Top 10% of cohort",                                                      tag: "Academic"     },
+  { year: "2023", name: "Roboclash",                               desc: "Winner, Engineering Award & Technology Award",                           tag: "Competition"  },
+  { year: "2023", name: "MindfulHacks",                            desc: "Catalyst Story mental wellness RPG",                                     tag: "Competition"  },
+  { year: "2022", name: "Roboclash",                               desc: "2nd Runner Up & Lionsbot Most Innovative Robot Award",                   tag: "Competition"  },
+  { year: "2021", name: "Lee Kuan Yew STEP Award",                 desc: "Ministry of Education, recognising outstanding polytechnic graduates",   tag: "Scholarship"  },
 ];
 
 // ─── COMPONENT ───────────────────────────────────────────────────────────────
@@ -79,13 +107,13 @@ function Home() {
           <Row className="align-items-center">
             <Col md={4} className="hp-hero__photo-col">
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={800}>
-                <img src={myImg} alt="Kwok Keith" className="hp-hero__photo" />
+                <img src={myImg} alt="Keith Kwok" className="hp-hero__photo" />
               </Tilt>
             </Col>
             <Col md={8} className="hp-hero__bio-col">
-              <h1 className="hp-hero__name">Kwok Keith</h1>
+              <h1 className="hp-hero__name">Keith Kwok</h1>
               <p className="hp-hero__title">PhD Student · NTU Singapore</p>
-              <p className="hp-hero__summary">{RESEARCH_SUMMARY}</p>
+              <p className="hp-hero__summary"><RESEARCH_SUMMARY /></p>
               <div className="hp-hero__meta">
                 <span className="hp-hero__location">
                   <HiLocationMarker /> Singapore
@@ -95,7 +123,7 @@ function Home() {
                 <a href="mailto:keithkwok99@gmail.com" className="hp-hero__icon-link" aria-label="Email">
                   <FaEnvelope />
                 </a>
-                <a href="https://scholar.google.com" target="_blank" rel="noreferrer" className="hp-hero__icon-link" aria-label="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=sWWi37YAAAAJ" target="_blank" rel="noreferrer" className="hp-hero__icon-link" aria-label="Google Scholar">
                   <SiGooglescholar />
                 </a>
                 <a href="https://github.com/kwokkeith" target="_blank" rel="noreferrer" className="hp-hero__icon-link" aria-label="GitHub">
@@ -122,7 +150,7 @@ function Home() {
               <Row>
                 <Col md={7} className="hp-focus-col">
                   <h2 className="hp-section__heading">Research Focus</h2>
-                  <p className="hp-section__body">{RESEARCH_FOCUS}</p>
+                  <p className="hp-section__body"><RESEARCH_FOCUS /></p>
                 </Col>
                 <Col md={5} className="hp-updates-col">
                   <h2 className="hp-section__heading">Recent Updates</h2>
@@ -140,7 +168,7 @@ function Home() {
 
             {/* Publications */}
             <section id="publications" className="hp-section">
-              <h2 className="hp-section__heading">Publications</h2>
+              <h2 className="hp-section__heading">Selected Publications</h2>
               {PUBLICATIONS.length === 0 ? (
                 <p className="hp-section__body hp-section__body--muted">
                   TBA
@@ -194,13 +222,12 @@ function Home() {
             </section>
 
             {/* Awards */}
-            <section id="awards" className="hp-section hp-section--alt">
+            <section id="awards" className="hp-section hp-section--alt" style={{ paddingTop: "32px", paddingBottom: "32px" }}>
               <h2 className="hp-section__heading">Awards</h2>
-
               <ul className="hp-awards">
                 {Object.entries(
                   AWARDS.reduce((acc, a) => {
-                    acc[a.year] = acc[a.year] ? [...acc[a.year], a.text] : [a.text];
+                    acc[a.year] = acc[a.year] ? [...acc[a.year], a] : [a];
                     return acc;
                   }, {})
                 )
@@ -208,11 +235,14 @@ function Home() {
                   .map(([year, items]) => (
                     <li key={year} className="hp-awards__item">
                       <span className="hp-awards__year">{year}</span>
-
                       <ul className="hp-awards__group">
-                        {items.map((text, i) => (
+                        {items.map((a, i) => (
                           <li key={i} className="hp-awards__entry">
-                            {text}
+                            <span className={`hp-awards__tag hp-awards__tag--${a.tag.toLowerCase()}`}>{a.tag}</span>
+                            <div className="hp-awards__content">
+                              <span className="hp-awards__name">{a.name}</span>
+                              <span className="hp-awards__desc">{a.desc}</span>
+                            </div>
                           </li>
                         ))}
                       </ul>

@@ -25,7 +25,7 @@ function TableOfContents({ title, sections }) {
             if (!el) return;
             const observer = new IntersectionObserver(
                 ([entry]) => { if (entry.isIntersecting) setActiveId(id); },
-                { rootMargin: "-10% 0px -60% 0px" }
+                { rootMargin: "-10% 0px -55% 0px" }
             );
             observer.observe(el);
             observers.push(observer);

@@ -5,8 +5,8 @@ import { SiGooglescholar } from "react-icons/si";
 import { HiPlus, HiX } from "react-icons/hi";
 
 const LINKS = [
-    { icon: <FaEnvelope />, label: "Email", href: "mailto:kwokkeith@example.com" },
-    { icon: <SiGooglescholar />, label: "Google Scholar", href: "https://scholar.google.com", target: "_blank" },
+    { icon: <FaEnvelope />, label: "Email", href: "mailto:keithkwok99@gmail.com" },
+    { icon: <SiGooglescholar />, label: "Google Scholar", href: "https://scholar.google.com/citations?user=sWWi37YAAAAJ", target: "_blank" },
     { icon: <AiFillGithub />, label: "GitHub", href: "https://github.com/kwokkeith", target: "_blank" },
     { icon: <FaLinkedinIn />, label: "LinkedIn", href: "https://www.linkedin.com/in/kwokkeith/", target: "_blank" },
 ];

@@ -55,7 +55,7 @@ function NavBar({ darkMode, toggleDarkMode }) {
         {/* Brand */}
         <Navbar.Brand as={Link} to="/" className="site-navbar__brand" onClick={handleBrandClick}>
           <img src={brandLogo} className="site-navbar__brand-logo" alt="logo" />
-          Kwok Keith
+          Keith Kwok
         </Navbar.Brand>
 
         {/* Hamburger — only visible below md */}

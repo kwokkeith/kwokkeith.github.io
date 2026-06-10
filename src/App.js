@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -20,22 +19,15 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, updateLoad] = useState(true);
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      updateLoad(false);
-    }, 1200);
-    return () => clearTimeout(timer);
-  }, []);
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
 
   const toggleDarkMode = () => setDarkMode(d => !d);
 
   return (
     <Router>
-      <Preloader load={load} />
-      <div className={`App${darkMode ? " dark" : ""}`} id={load ? "no-scroll" : "scroll"}>
+      <div className={`App${darkMode ? " dark" : ""}`} id="scroll">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <ScrollToTop />
         <Routes>
@@ -46,7 +38,7 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
-        {/* <FloatingContact /> */}
+        <FloatingContact />
         <ThemeBubble darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </Router>
