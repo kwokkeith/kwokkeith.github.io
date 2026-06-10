@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.d89c3c3b.css",
-    "main.js": "/static/js/main.d8a6b0e0.js",
-    "static/js/415.f3233506.chunk.js": "/static/js/415.f3233506.chunk.js",
-    "static/js/787.b98c23e5.chunk.js": "/static/js/787.b98c23e5.chunk.js",
+    "main.css": "/static/css/main.819b8ec6.css",
+    "main.js": "/static/js/main.077cdfac.js",
+    "static/js/415.2b54a9c9.chunk.js": "/static/js/415.2b54a9c9.chunk.js",
+    "static/js/787.dcde50e9.chunk.js": "/static/js/787.dcde50e9.chunk.js",
     "static/media/avatar.png": "/static/media/avatar.b131991d7f605e9e6d97.png",
     "static/media/UiUx_Img.png": "/static/media/UiUx_Img.bf9e5e07e1f685f44967.png",
     "static/media/IlluminateDarkness.png": "/static/media/IlluminateDarkness.eb6883474b859cf44f4e.png",
@@ -37,13 +37,13 @@
     "static/media/pre.svg": "/static/media/pre.578b4e023029bac663d2.svg",
     "static/media/cpp_logo.svg": "/static/media/cpp_logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/index.html",
-    "main.d89c3c3b.css.map": "/static/css/main.d89c3c3b.css.map",
-    "main.d8a6b0e0.js.map": "/static/js/main.d8a6b0e0.js.map",
-    "415.f3233506.chunk.js.map": "/static/js/415.f3233506.chunk.js.map",
-    "787.b98c23e5.chunk.js.map": "/static/js/787.b98c23e5.chunk.js.map"
+    "main.819b8ec6.css.map": "/static/css/main.819b8ec6.css.map",
+    "main.077cdfac.js.map": "/static/js/main.077cdfac.js.map",
+    "415.2b54a9c9.chunk.js.map": "/static/js/415.2b54a9c9.chunk.js.map",
+    "787.dcde50e9.chunk.js.map": "/static/js/787.dcde50e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d89c3c3b.css",
-    "static/js/main.d8a6b0e0.js"
+    "static/css/main.819b8ec6.css",
+    "static/js/main.077cdfac.js"
   ]
 }
