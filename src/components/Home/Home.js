@@ -65,7 +65,7 @@ const PUBLICATIONS = [
 ];
 
 const EDUCATION = [
-  { year: "2016", label: "SP",                sub: "Aerospace Engineering" },
+  { year: "2016", label: "SP",                sub: "Diploma in Aeronautical Engineering" },
   { year: "2021", label: "SUTD",              sub: "BEng, Computer Science & Design" },
   { year: "2026", label: "NTU S'pore",        sub: "PhD, Computer Science" },
 ];
