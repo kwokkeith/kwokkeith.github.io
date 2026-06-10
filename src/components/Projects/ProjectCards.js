@@ -1,60 +1,43 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub, BsYoutube } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" className="project-card-image"/>
-      <Card.Body>
-        <Card.Title className="project-card-title">{props.title}</Card.Title>
-        
+    <div className="pc-card">
+      <div className="pc-card__img-wrap">
+        <img src={props.imgPath} alt={props.title} className="pc-card__img" />
+      </div>
+      <div className="pc-card__body">
+        <h3 className="pc-card__title">{props.title}</h3>
+
         {props.logos && props.logos.length > 0 && (
-          <Row className="project-logos">
-            {props.logos.map((logo, index) => (
-              <Col>
-                <img
-                  key={index} 
-                  src={logo} 
-                  alt={`logo-${index}`}
-                  className="project-logo-image"
-                >
-                </img>
-              </Col>
+          <div className="pc-card__logos">
+            {props.logos.map((logo, i) => (
+              <img key={i} src={logo} alt={`tech-${i}`} className="pc-card__logo" />
             ))}
-          </Row>
+          </div>
         )}
 
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        )}
-        {"\n"}
-        {"\n"}
+        <p className="pc-card__desc">{props.description}</p>
+
+        <div className="pc-card__links">
+          {props.ghLink && (
+            <a href={props.ghLink} target="_blank" rel="noreferrer" className="pc-card__link">
+              <BsGithub /> GitHub
+            </a>
+          )}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+          {!props.isBlog && props.demoLink && (
+            <a href={props.demoLink} target="_blank" rel="noreferrer" className="pc-card__link pc-card__link--demo">
+              <CgWebsite /> Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
+
 export default ProjectCards;

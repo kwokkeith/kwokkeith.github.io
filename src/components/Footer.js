@@ -1,45 +1,39 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="6" className="footer-copyright d-flex align-items-center text-start">
-          <h3>Kwok Keith, Copyright © {year}</h3>
-        </Col>
-        <Col md="6" className="footer-body d-flex justify-content-end">
-          <ul className="footer-icons d-flex">
-            <li className="social-icons">
-              <a
-                href="https://github.com/kwokkeith"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/kwokkeith/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="site-footer" id="site-footer">
+      <Container fluid>
+        <Row className="align-items-center">
+          <Col md={6} className="site-footer__copy">
+            Kwok Keith &copy; {year}
+          </Col>
+          <Col md={6} className="site-footer__links">
+            <a href="mailto:keithkwok99@gmail.com" className="site-footer__link" aria-label="Email">
+              <FaEnvelope />
+              <span>Email</span>
+            </a>
+            <a href="https://scholar.google.com" target="_blank" rel="noreferrer" className="site-footer__link" aria-label="Google Scholar">
+              <SiGooglescholar />
+              <span>Scholar</span>
+            </a>
+            <a href="https://github.com/kwokkeith" target="_blank" rel="noreferrer" className="site-footer__link" aria-label="GitHub">
+              <AiFillGithub />
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kwokkeith/" target="_blank" rel="noreferrer" className="site-footer__link" aria-label="LinkedIn">
+              <FaLinkedinIn />
+              <span>LinkedIn</span>
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 }
 

@@ -1,130 +1,95 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { HiMoon, HiSun } from "react-icons/hi";
 import brandLogo from "../Assets/brand.png";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-// import {
-//   AiFillStar,
-//   AiOutlineHome,
-//   AiOutlineFundProjectionScreen,
-//   AiOutlineUser,
-// } from "react-icons/ai";
-import {
-  FaHome,
-  FaProjectDiagram,
-  Fa
-} from "react-icons/fa"
 
-import {
-  IoDocumentText
-} from "react-icons/io5"
+function NavBar({ darkMode, toggleDarkMode }) {
+  const [expand, setExpand] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY >= 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  const navLinks = [
+    { label: "About",    to: "/"        },
+    // { label: "Research", to: "/research" },
+    { label: "Projects", to: "/project" },
+  ];
+
+  const handleNavClick = (e, to) => {
+    setExpand(false);
+    if (location.pathname === to) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-  }
+  };
 
-  window.addEventListener("scroll", scrollHandler);
+  const handleBrandClick = (e) => {
+    e.preventDefault();
+    setExpand(false);
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
+    }
+  };
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={`site-navbar${scrolled ? " site-navbar--scrolled" : ""}`}
     >
-      <Container>
-        <Navbar.Brand className="d-flex">
-          <img src={brandLogo} className="logo" />
+      <Container className="site-navbar__inner">
+
+        {/* Brand */}
+        <Navbar.Brand as={Link} to="/" className="site-navbar__brand" onClick={handleBrandClick}>
+          <img src={brandLogo} className="site-navbar__brand-logo" alt="logo" />
+          Kwok Keith
         </Navbar.Brand>
+
+        {/* Hamburger — only visible below md */}
         <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          aria-controls="main-nav"
+          onClick={() => setExpand(e => e ? false : "expanded")}
+          className="site-navbar__toggle"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link 
-                as={Link} 
-                to="/" 
-                onClick={() => updateExpanded(false)}
-              >
-                <FaHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item> */}
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaProjectDiagram
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <IoDocumentText style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+        {/* Nav links — collapse on mobile, inline on desktop */}
+        <Navbar.Collapse id="main-nav">
+          <Nav className="ms-auto site-navbar__nav">
+            {navLinks.map(({ label, to }) => {
+              const isActive = location.pathname === to;
+              return (
+                <Nav.Item key={to}>
+                  <Nav.Link
+                    as={Link}
+                    to={to}
+                    onClick={(e) => handleNavClick(e, to)}
+                    className={`site-navbar__link${isActive ? " site-navbar__link--active" : ""}`}
+                  >
+                    {label}
+                  </Nav.Link>
+                </Nav.Item>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
