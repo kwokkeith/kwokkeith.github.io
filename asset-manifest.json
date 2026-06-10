@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ea901f96.css",
-    "main.js": "/Portfolio/static/js/main.1a60428e.js",
+    "main.css": "/Portfolio/static/css/main.4fd751f9.css",
+    "main.js": "/Portfolio/static/js/main.3ab80ccb.js",
     "static/js/415.f3233506.chunk.js": "/Portfolio/static/js/415.f3233506.chunk.js",
     "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
-    "static/media/avatar.png": "/Portfolio/static/media/avatar.11ac55882c3ca58a9949.png",
+    "static/media/avatar.png": "/Portfolio/static/media/avatar.b131991d7f605e9e6d97.png",
     "static/media/UiUx_Img.png": "/Portfolio/static/media/UiUx_Img.bf9e5e07e1f685f44967.png",
     "static/media/IlluminateDarkness.png": "/Portfolio/static/media/IlluminateDarkness.eb6883474b859cf44f4e.png",
-    "static/media/home-main.png": "/Portfolio/static/media/home-main.701830291334970d51a7.png",
     "static/media/EnigmaMachine.jpeg": "/Portfolio/static/media/EnigmaMachine.7d6bc5237d1d904fef6a.jpeg",
-    "static/media/python_logo.png": "/Portfolio/static/media/python_logo.4f5f52c67194dc46e313.png",
     "static/media/FlightDynamics.png": "/Portfolio/static/media/FlightDynamics.b3773e2c92e08eec06cd.png",
     "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.20fe0abfbf104d6550c4.jpg",
     "static/media/raftConsensus.png": "/Portfolio/static/media/raftConsensus.6619af9d1bcb043d66dc.png",
@@ -22,7 +20,6 @@
     "static/media/java_logo.png": "/Portfolio/static/media/java_logo.860b21889bd8a30b86aa.png",
     "static/media/resume.pdf": "/Portfolio/static/media/resume.41eeb87f8938a645bdf8.pdf",
     "static/media/csharp_logo.png": "/Portfolio/static/media/csharp_logo.456d41f630085700b5d8.png",
-    "static/media/javascript_logo.png": "/Portfolio/static/media/javascript_logo.c54fa24f3bdd27d1b218.png",
     "static/media/tensorflow_logo.png": "/Portfolio/static/media/tensorflow_logo.2c3f805bda87e15de474.png",
     "static/media/roboclash2022.jpg": "/Portfolio/static/media/roboclash2022.2dd32ab30d67f752b8b4.jpg",
     "static/media/roboclash2023.jpeg": "/Portfolio/static/media/roboclash2023.d3b35f07f9acb66d5a55.jpeg",
@@ -36,20 +33,18 @@
     "static/media/go_logo.png": "/Portfolio/static/media/go_logo.6a3cd1884425f3b03c7d.png",
     "static/media/verilog-logo.png": "/Portfolio/static/media/verilog-logo.868b4f044ff5b0c22863.png",
     "static/media/figma_logo.png": "/Portfolio/static/media/figma_logo.1475cc523b5f4c537bd9.png",
-    "static/media/3dprint_logo.jpg": "/Portfolio/static/media/3dprint_logo.5cfd065f7a2ffb3900c7.jpg",
     "static/media/knight.png": "/Portfolio/static/media/knight.ad61968b17b488fe1f93.png",
     "static/media/inventor_logo.png": "/Portfolio/static/media/inventor_logo.d5a32b2b3de583ea66a9.png",
-    "static/media/react_logo.svg": "/Portfolio/static/media/react_logo.55360266b3781dae00a5a77c8916f82d.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.578b4e023029bac663d2.svg",
     "static/media/cpp_logo.svg": "/Portfolio/static/media/cpp_logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/Portfolio/index.html",
-    "main.ea901f96.css.map": "/Portfolio/static/css/main.ea901f96.css.map",
-    "main.1a60428e.js.map": "/Portfolio/static/js/main.1a60428e.js.map",
+    "main.4fd751f9.css.map": "/Portfolio/static/css/main.4fd751f9.css.map",
+    "main.3ab80ccb.js.map": "/Portfolio/static/js/main.3ab80ccb.js.map",
     "415.f3233506.chunk.js.map": "/Portfolio/static/js/415.f3233506.chunk.js.map",
     "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea901f96.css",
-    "static/js/main.1a60428e.js"
+    "static/css/main.4fd751f9.css",
+    "static/js/main.3ab80ccb.js"
   ]
 }
