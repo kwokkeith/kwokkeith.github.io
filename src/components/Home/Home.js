@@ -50,8 +50,8 @@ const RESEARCH_FOCUS = () => (
 
 const RECENT_UPDATES = [
   { date: "Aug 2026", text: "Started PhD in Computer Science at NTU S'pore" },
-  { date: "May 2026", text: "Graduated with Honours - BEng Computer Science at SUTD" },
-  { date: "Apr 2026", text: "DV8 autonomous cleaning robot deployed at Changi Airport Group" },
+  { date: "May 2025", text: "Graduated with Honours - BEng Computer Science at SUTD" },
+  { date: "Apr 2025", text: "DV8 autonomous cleaning robot deployed at Changi Airport Group" },
 ];
 
 const PUBLICATIONS = [
