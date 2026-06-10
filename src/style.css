@@ -1370,18 +1370,6 @@ button:focus {
   position: relative;
 }
 
-/* Tail extending left from first dot */
-.hp-timeline__node:first-child::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -48px;
-  width: 48px;
-  height: 2px;
-  background-color: #e5e7eb;
-  z-index: 0;
-}
-
 .hp-timeline__node {
   display: flex;
   flex-direction: column;
@@ -1405,8 +1393,8 @@ button:focus {
 .hp-timeline__line {
   position: absolute;
   top: 4px;
-  left: 50%;
-  width: 100%;
+  left: 30%;
+  width: 140%;
   height: 2px;
   background-color: #e5e7eb;
   z-index: 0;
