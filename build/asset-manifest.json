@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.0529b36b.css",
-    "main.js": "/static/js/main.4edbeec3.js",
+    "main.js": "/static/js/main.812ffaf4.js",
     "static/js/415.2b54a9c9.chunk.js": "/static/js/415.2b54a9c9.chunk.js",
     "static/js/787.dcde50e9.chunk.js": "/static/js/787.dcde50e9.chunk.js",
-    "static/media/avatar.png": "/static/media/avatar.b131991d7f605e9e6d97.png",
     "static/media/UiUx_Img.png": "/static/media/UiUx_Img.bf9e5e07e1f685f44967.png",
     "static/media/IlluminateDarkness.png": "/static/media/IlluminateDarkness.eb6883474b859cf44f4e.png",
     "static/media/EnigmaMachine.jpeg": "/static/media/EnigmaMachine.7d6bc5237d1d904fef6a.jpeg",
     "static/media/FlightDynamics.png": "/static/media/FlightDynamics.b3773e2c92e08eec06cd.png",
+    "static/media/avatar.jpeg": "/static/media/avatar.246c3ce46f8318e13de6.jpeg",
     "static/media/raftConsensus.png": "/static/media/raftConsensus.6619af9d1bcb043d66dc.png",
     "static/media/dv8.jpeg": "/static/media/dv8.02cc33b07a3ac36ec5c6.jpeg",
     "static/media/aslAi.jpg": "/static/media/aslAi.a60b411012be4dc4a9f9.jpg",
@@ -38,12 +38,12 @@
     "static/media/cpp_logo.svg": "/static/media/cpp_logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/index.html",
     "main.0529b36b.css.map": "/static/css/main.0529b36b.css.map",
-    "main.4edbeec3.js.map": "/static/js/main.4edbeec3.js.map",
+    "main.812ffaf4.js.map": "/static/js/main.812ffaf4.js.map",
     "415.2b54a9c9.chunk.js.map": "/static/js/415.2b54a9c9.chunk.js.map",
     "787.dcde50e9.chunk.js.map": "/static/js/787.dcde50e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0529b36b.css",
-    "static/js/main.4edbeec3.js"
+    "static/js/main.812ffaf4.js"
   ]
 }
