@@ -55,13 +55,13 @@ const RECENT_UPDATES = [
 ];
 
 const PUBLICATIONS = [
-  // {
-    //   title: "Measuring Infatuation in Human-AI Dialogue",
-    //   venue: "ACL 2027",
-    //   authors: "Kwok Keith, ...",
-    //   link: "https://arxiv.org/...",
-    //   tag: "AI Safety",
-    // },
+  {
+      title: "https://arxiv.org/abs/2610.29413",
+      venue: "arXiv",
+      authors: "Keith Kwok, Wanting Ning, Tej Deep Pala, Desmond C. Ong, S. Supraja, Renwen Zhang, Soujanya Poria",
+      link: "https://arxiv.org/abs/2610.29413",
+      tag: "Computation and Language",
+    },
 ];
 
 const EDUCATION = [
